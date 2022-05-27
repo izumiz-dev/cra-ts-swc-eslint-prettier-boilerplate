@@ -5,5 +5,8 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'none',
   semi: true,
-  parser: 'typescript'
+  parser: 'typescript',
+  importOrder: ['^@core/(.*)$', '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true
 };
